@@ -6,12 +6,8 @@ import {
 } from "react-router-dom";
 
 import App from "../App";
-import SignIn from "../page/auth/SignIn";
-import SignUp from "../page/auth/SignUp";
-import Logs from "../page/logs/Index";
-import Driver from "../page/logs/Driver";
+import { SignIn, SignUp, Products, Driver, Logs, Students } from "@pages";
 import Statistics from "../page/logs/Statistics";
-import Students from "../page/logs/Students";
 
 const Router = () => {
   const router = createBrowserRouter(
@@ -23,6 +19,7 @@ const Router = () => {
           <Route path="driver" element={<Driver />} />
           <Route path="statistics" element={<Statistics />} />
           <Route path="students" element={<Students />} />
+          <Route path="products" element={<Products />} />
         </Route>
       </Route>
     )
